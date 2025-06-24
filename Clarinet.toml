@@ -1,20 +1,39 @@
-
 [project]
-name = "."
-authors = []
-telemetry = true
+name = "skill-share-token-economy"
+version = "1.0.0"
+description = "A decentralized skill-sharing platform using time-based tokens"
+authors = ["Your Name <your.email@example.com>"]
+keywords = ["stacks", "clarity", "skill-sharing", "time-tokens", "defi"]
+license = "MIT"
+
+[contracts.skill-share]
+path = "contracts/skill-share.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
 [repl.analysis]
 passes = ["check_checker"]
+
 [repl.analysis.check_checker]
-# If true, inputs are trusted after tx_sender has been checked.
+strict = false
 trusted_sender = false
-# If true, inputs are trusted after contract-caller has been checked.
 trusted_caller = false
-# If true, untrusted data may be passed into a private function without a
-# warning, if it gets checked inside. This check will also propagate up to the
-# caller.
 callee_filter = false
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
-# depends_on = []
+# Network configurations
+[networks]
+simnet = "http://localhost:20443"
+testnet = "https://stacks-node-api.testnet.stacks.co"
+mainnet = "https://stacks-node-api.mainnet.stacks.co"
+
+# Development settings
+[development]
+deployment_fee_rate = 1
+include_boot_contracts = true
+
+# Test settings
+[test]
+timeout = 30000

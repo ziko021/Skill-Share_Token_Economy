@@ -2,7 +2,7 @@
 
 A decentralized platform for exchanging skills and services using time-based fungible tokens on the Stacks blockchain.
 
-## 🚀 Features
+##  Features
 
 - Mint, transfer, and escrow tokens
 - User profile creation and skill management
@@ -10,14 +10,14 @@ A decentralized platform for exchanging skills and services using time-based fun
 - Token-based service booking system
 - Provider reputation via user ratings
 
-## 📦 Token Details
+##  Token Details
 
 - **Name**: SkillTime
 - **Symbol**: STT
 - **Decimals**: 0
 - **Initial Supply**: 1,000,000 STT
 
-## 🛠 Key Smart Contract Modules
+##  Key Smart Contract Modules
 
 - **Token Logic**: Minting, transferring, escrow
 - **User Profiles**: Skill list, reputation, service stats
@@ -25,14 +25,14 @@ A decentralized platform for exchanging skills and services using time-based fun
 - **Bookings**: Escrowed STT payments, completion tracking
 - **Ratings**: Post-service feedback with score updates
 
-## 🧪 Running Tests
+##  Running Tests
 
 Use Clarinet to test the contract:
 ```bash
 clarinet test
 ```
 
-## ⚠️ Errors and Validations
+##  Errors and Validations
 
 | Code | Meaning                     |
 |------|-----------------------------|
@@ -46,12 +46,12 @@ clarinet test
 | 107  | Cannot book your own service|
 | 108  | Invalid rating value (1–5)  |
 
-## 👤 Author
+## Author
 
 - GitHub: [ziko021](https://github.com/ziko021)
 - Email: ossaiziko01@gmail.com
 
-## 📄 License
+## License
 
 MIT License
 

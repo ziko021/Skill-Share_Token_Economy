@@ -10,8 +10,6 @@ A decentralized platform for exchanging skills and services using time-based fun
 - Token-based service booking system
 - Provider reputation via user ratings
 
-##  Token Details
-
 - **Name**: SkillTime
 - **Symbol**: STT
 - **Decimals**: 0
@@ -25,7 +23,7 @@ A decentralized platform for exchanging skills and services using time-based fun
 - **Bookings**: Escrowed STT payments, completion tracking
 - **Ratings**: Post-service feedback with score updates
 
-##  Running Tests
+
 
 Use Clarinet to test the contract:
 ```bash
